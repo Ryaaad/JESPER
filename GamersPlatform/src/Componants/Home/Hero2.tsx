@@ -6,7 +6,7 @@ const Hero2 = () => {
             <img src={Nasa} className=" lgm:max-w-[700px] object-cover lgm:h-[100vh]"  />
             <div id="text"  className='text-white flex flex-col gap-6 
             w-[50%] lg:w-[%100] lg:p-5 ' >
-        <h1 className='text-6xl max-w-[80%] tracking-[2px] italic font-[900] lg:text-3xl'>IN LOVE 
+        <h1 className='text-6xl max-w-[80%] font-["Fugaz_One",cursive] lg:text-3xl'>IN LOVE 
         <strong className='text-[rgb(203,159,43)] max-w-[90%] ' > WITH GAMING </strong> </h1>
                 <p className=' lg:max-w-[75%] lg:min-w-[400px] sm:min-w-[250px]  mx-3 ' >
                 All of the best stories begin in the basement, and Team Jesper is one of those. </p>

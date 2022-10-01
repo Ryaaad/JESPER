@@ -4,7 +4,7 @@ const Hero1 = () => {
             <div id="hero1" className="flex pt-[100px] gap-24  w-full lgm:justify-end lg:flex-wrap-reverse
              items-center lg:my-10  ">
                 <div id="text"  className='text-white flex flex-col gap-6  w-[50%] lg:w-[%100] lg:p-5 ' >
-            <h1 className='text-6xl tracking-[2px] italic font-[900] lg:text-3xl  '>NEW LIVE STREAM EVERY  <strong className='text-[rgb(203,159,43)] max-w-[90%] ' >MONDAY 6PM </strong> </h1>
+            <h1 className='text-6xl font-["Fugaz_One",cursive] lg:text-3xl  '>NEW LIVE STREAM EVERY  <strong className='text-[rgb(203,159,43)] max-w-[90%] ' >MONDAY 6PM </strong> </h1>
                     <p className='  lg:min-w-[400px] sm:min-w-[250px]  mx-3 ' >From 
                     challenges to duels, testing out mods, 
             reviewing games or bloody matches with other teams - you name it, we stream it. </p>

@@ -1,10 +1,10 @@
 import { useState } from "react";
-import { motion , AnimatePresence, useAnimation } from "framer-motion";
+import { motion , AnimatePresence } from "framer-motion";
 import Home0 from "../Home/Home";
-import About0 from "../About/About";
-import Footer from "../footer/footer"
+import About0 from "../About";
+import Footer from "../shared/footer"
 const Navbar1 = () => { 
-  const handlClickIl=(a:number)=>{
+  const ChosenRoute=(a:number)=>{
     switch (a){
 case 1 : 
     setAbout(false);
@@ -51,19 +51,19 @@ case 4 :
                     <motion.li  className={` hover:text-[#cb9f2b] hover:border-b hover:border-solid 
              cursor-pointer hover:border-[#cb9f2b] tracking-[2px] font-medium 
         ${Home ? 'text-[#cb9f2b] border-b border-solid border-[#cb9f2b]' : 'text-white border-none' }  `}
-                    onClick={()=>{setHome(true); handlClickIl(1)} } variants={variantCh}   > HOME </motion.li>
+                    onClick={()=>{setHome(true); ChosenRoute(1)} } variants={variantCh}   > HOME </motion.li>
                      <motion.li className={` hover:text-[#cb9f2b] hover:border-b hover:border-solid 
               cursor-pointer hover:border-[#cb9f2b] tracking-[2px] font-medium 
         ${About ? 'text-[#cb9f2b] border-b border-solid border-[#cb9f2b]' : 'text-white border-none' }  `}
-                    onClick={()=>{setAbout(true); handlClickIl(2)}} variants={variantCh} > ABOUT </motion.li>
+                    onClick={()=>{setAbout(true); ChosenRoute(2)}} variants={variantCh} > ABOUT </motion.li>
                      <motion.li  className={` hover:text-[#cb9f2b] hover:border-b hover:border-solid 
          cursor-pointer hover:border-[#cb9f2b] tracking-[2px] font-medium 
         ${Stream ? 'text-[#cb9f2b] border-b border-solid border-[#cb9f2b]' : 'text-white border-none' }  `}
-                    onClick={()=>{setStream(true); handlClickIl(3)}} variants={variantCh} > STEARMS </motion.li>
+                    onClick={()=>{setStream(true); ChosenRoute(3)}} variants={variantCh} > STEARMS </motion.li>
                      <motion.li  className={` hover:text-[#cb9f2b] hover:border-b hover:border-solid 
              cursor-pointer hover:border-[#cb9f2b] tracking-[2px] font-medium 
         ${Contact ? 'text-[#cb9f2b] border-b border-solid border-[#cb9f2b]' : 'text-white border-none' }  `}
-                    onClick={()=>{setContact(true); handlClickIl(4)}} variants={variantCh} > CONTACT </motion.li>
+                    onClick={()=>{setContact(true); ChosenRoute(4)}} variants={variantCh} > CONTACT </motion.li>
                 </ul>
         </div> 
         <div id="burger"  className=" flex flex-col lgm:hidden items-end cursor-pointer " 
@@ -77,19 +77,19 @@ case 4 :
                     <motion.li  className={` hover:text-[#cb9f2b] hover:border-b hover:border-solid 
              cursor-pointer hover:border-[#cb9f2b] tracking-[2px] font-medium  w-[max-content]
         ${Home ? 'text-[#cb9f2b] border-b border-solid border-[#cb9f2b]' : 'text-white border-none' }  `}
-                    onClick={()=>{setHome(true); handlClickIl(1)} } variants={variantCh}   > HOME </motion.li>
+                    onClick={()=>{setHome(true); ChosenRoute(1)} } variants={variantCh}   > HOME </motion.li>
                      <motion.li className={` hover:text-[#cb9f2b] hover:border-b hover:border-solid 
               cursor-pointer hover:border-[#cb9f2b] tracking-[2px] font-medium 
         ${About ? 'text-[#cb9f2b] border-b border-solid border-[#cb9f2b]' : 'text-white border-none' }  `}
-                    onClick={()=>{setAbout(true); handlClickIl(2)}} variants={variantCh} > ABOUT </motion.li>
+                    onClick={()=>{setAbout(true); ChosenRoute(2)}} variants={variantCh} > ABOUT </motion.li>
                      <motion.li  className={` hover:text-[#cb9f2b] hover:border-b hover:border-solid 
          cursor-pointer hover:border-[#cb9f2b] tracking-[2px] font-medium  w-[max-content]
         ${Stream ? 'text-[#cb9f2b] border-b border-solid border-[#cb9f2b]' : 'text-white border-none' }  `}
-                    onClick={()=>{setStream(true); handlClickIl(3)}} variants={variantCh} > STEARMS </motion.li>
+                    onClick={()=>{setStream(true); ChosenRoute(3)}} variants={variantCh} > STEARMS </motion.li>
                      <motion.li  className={` hover:text-[#cb9f2b] hover:border-b hover:border-solid 
              cursor-pointer hover:border-[#cb9f2b] tracking-[2px] font-medium  w-[max-content]
         ${Contact ? 'text-[#cb9f2b] border-b border-solid border-[#cb9f2b]' : 'text-white border-none' }  `}
-                    onClick={()=>{setContact(true); handlClickIl(4)}} variants={variantCh} > CONTACT </motion.li>
+                    onClick={()=>{setContact(true); ChosenRoute(4)}} variants={variantCh} > CONTACT </motion.li>
                 </ul>
             </div> }
         </motion.div>

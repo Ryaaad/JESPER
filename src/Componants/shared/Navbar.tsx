@@ -2,10 +2,9 @@ import { useState } from "react";
 import { motion , AnimatePresence } from "framer-motion";
 import Home0 from "../Home/Home";
 import About0 from "../About";
-import Footer from "../shared/footer"
-const Navbar1 = () => { 
-  const ChosenRoute=(a:number)=>{
-    switch (a){
+const Navbar = () => { 
+  const ChosenRoute=(Route:number)=>{
+    switch (Route){
 case 1 : 
     setAbout(false);
     setContact(false);
@@ -37,43 +36,40 @@ case 4 :
     F:{y:-0,  transition:{ delay:.2, staggerChildren:.2, when:"beforeChildren",} },
     }
     const variantCh={ A: {x:-10, opacity:0 , scale:0.8 },F:{x:-0, opacity:1 , scale:1 },}
-   const [Lg, setLg] = useState(false);
+   const [burger, setburger] = useState(false);
     return (
-    <div className="max-w-full " >
-            <motion.div className="flex shadow z-10 justify-between
-         fixed w-[100vw] items-center h-[90px] text-white px-12 "   
-         variants={variant}
-         animate="F" initial="A"
-         >
- <motion.h1 id="logo" className="text-4xl tracking-[2px] italic font-bold" variants={variantCh} >JESPER</motion.h1>
-        <div id="links"  className="lg:hidden" >
-                <ul className="flex gap-10  ">
-                    <motion.li  className={` hover:text-[#cb9f2b] hover:border-b hover:border-solid 
-             cursor-pointer hover:border-[#cb9f2b] tracking-[2px] font-medium 
+    <div className="max-w-full" >
+            <motion.div className="flex shadow z-10 justify-between fixed w-full items-center h-24 text-white px-5 md:px-10 lg:px-20 xl:px-52 2xl:px-80 "   
+            variants={variant}  animate="F" initial="A">
+           <motion.h1 id="logo" className="tracking-widest italic font-bold text-xl md:text-2xl lg:text-4xl 2xl:text-5xl" variants={variantCh} >JESPER</motion.h1>
+         
+          <div className="  hidden lg:block" >
+                <ul className="flex gap-10 tracking-widest uppercase font-['Montserrat',sans-serif] ">
+                    <motion.li  className={` hover:text-[#cb9f2b] hover:border-b hover:border-solid  cursor-pointer hover:border-[#cb9f2b] font-medium 
         ${Home ? 'text-[#cb9f2b] border-b border-solid border-[#cb9f2b]' : 'text-white border-none' }  `}
                     onClick={()=>{setHome(true); ChosenRoute(1)} } variants={variantCh}   > HOME </motion.li>
                      <motion.li className={` hover:text-[#cb9f2b] hover:border-b hover:border-solid 
-              cursor-pointer hover:border-[#cb9f2b] tracking-[2px] font-medium 
+              cursor-pointer hover:border-[#cb9f2b] font-medium 
         ${About ? 'text-[#cb9f2b] border-b border-solid border-[#cb9f2b]' : 'text-white border-none' }  `}
                     onClick={()=>{setAbout(true); ChosenRoute(2)}} variants={variantCh} > ABOUT </motion.li>
                      <motion.li  className={` hover:text-[#cb9f2b] hover:border-b hover:border-solid 
-         cursor-pointer hover:border-[#cb9f2b] tracking-[2px] font-medium 
+         cursor-pointer hover:border-[#cb9f2b] font-medium 
         ${Stream ? 'text-[#cb9f2b] border-b border-solid border-[#cb9f2b]' : 'text-white border-none' }  `}
                     onClick={()=>{setStream(true); ChosenRoute(3)}} variants={variantCh} > STEARMS </motion.li>
                      <motion.li  className={` hover:text-[#cb9f2b] hover:border-b hover:border-solid 
-             cursor-pointer hover:border-[#cb9f2b] tracking-[2px] font-medium 
+             cursor-pointer hover:border-[#cb9f2b] font-medium 
         ${Contact ? 'text-[#cb9f2b] border-b border-solid border-[#cb9f2b]' : 'text-white border-none' }  `}
                     onClick={()=>{setContact(true); ChosenRoute(4)}} variants={variantCh} > CONTACT </motion.li>
                 </ul>
         </div> 
-        <div id="burger"  className=" flex flex-col lgm:hidden items-end cursor-pointer " 
-        onClick={()=>{setLg(!Lg)}} >
+        <div id="burger"  className="flex flex-col lg:hidden items-end cursor-pointer" 
+        onClick={()=>{setburger(!burger)}} >
             <span  className="block w-6 h-[2px]  bg-white " ></span>
             <span  className="block w-4 h-[2px] my-1 bg-white duration-500 " ></span>
             <span  className="block w-6 h-[2px] bg-white " ></span>
         </div>
-        { Lg &&  <div className="absolute top-[100%] right-[10%]  lgm:hidden  ">
-                <ul className="flex flex-col gap-5 items-end  ">
+        { burger &&  <div className="absolute top-[80%] right-[5%]  lgm:hidden  ">
+                <ul className="flex flex-col gap-3 items-end  text-sm md:text-base">
                     <motion.li  className={` hover:text-[#cb9f2b] hover:border-b hover:border-solid 
              cursor-pointer hover:border-[#cb9f2b] tracking-[2px] font-medium  w-[max-content]
         ${Home ? 'text-[#cb9f2b] border-b border-solid border-[#cb9f2b]' : 'text-white border-none' }  `}
@@ -114,11 +110,10 @@ case 4 :
     exit={{  x:100,opacity:0  ,transition:{delay:.3,duration:.2}}}>
      <About0></About0></motion.div> }
         </AnimatePresence>
-      <Footer></Footer>
     </div>
   
      
      );
 } 
  
-export default Navbar1;
+export default Navbar;

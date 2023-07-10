@@ -3,7 +3,7 @@ import {TiSocialTwitter} from "react-icons/ti";
 
 const Footer = () => {
     return ( 
-        <div className="bg-[#ffc632] w-full flex items-start justify-center px-3 py-10 gap-10 sm:justify-evenly sm:py-20 " >
+        <div className="bg-[#ffc632] w-full flex items-start justify-center px-3 py-10 gap-10 sm:justify-evenly lg:py-14 xl:py-16 " >
             <div className="flex flex-col items-center ">
             <h1 className="text-[#07080d] font-['Fugaz_One',cursive] text-sm sm:text-xl lg:text-2xl" >JESPER</h1>
              <div className="flex justify-center text-xl items-center gap-2 mt-2 sm:mt-4 sm:gap-5" > 

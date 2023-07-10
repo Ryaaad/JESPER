@@ -39,11 +39,11 @@ case 4 :
    const [burger, setburger] = useState(false);
     return (
     <div className="max-w-full" >
-            <motion.div className="flex shadow z-10 justify-between fixed w-full items-center h-24 text-white px-5 md:px-10 lg:px-20 xl:px-52 2xl:px-80 "   
+            <motion.div className="flex shadow z-10 justify-between fixed w-full items-center h-24 text-white px-5 md:px-10 lg:px-32 xl:px-44 2xl:px-60 "   
             variants={variant}  animate="F" initial="A">
            <motion.h1 id="logo" className="tracking-widest italic font-bold text-xl md:text-2xl lg:text-4xl 2xl:text-5xl" variants={variantCh} >JESPER</motion.h1>
          
-          <div className="  hidden lg:block" >
+          <div className="hidden lg:block" >
                 <ul className="flex gap-10 tracking-widest uppercase font-['Montserrat',sans-serif] ">
                     <motion.li  className={` hover:text-[#cb9f2b] hover:border-b hover:border-solid  cursor-pointer hover:border-[#cb9f2b] font-medium 
         ${Home ? 'text-[#cb9f2b] border-b border-solid border-[#cb9f2b]' : 'text-white border-none' }  `}
@@ -68,7 +68,7 @@ case 4 :
             <span  className="block w-4 h-[2px] my-1 bg-white duration-500 " ></span>
             <span  className="block w-6 h-[2px] bg-white " ></span>
         </div>
-        { burger &&  <div className="absolute top-[80%] right-[5%]  lgm:hidden  ">
+        { burger &&  <div className="absolute top-[80%] right-[5%] block lg:hidden  ">
                 <ul className="flex flex-col gap-3 items-end  text-sm md:text-base">
                     <motion.li  className={` hover:text-[#cb9f2b] hover:border-b hover:border-solid 
              cursor-pointer hover:border-[#cb9f2b] tracking-[2px] font-medium  w-[max-content]

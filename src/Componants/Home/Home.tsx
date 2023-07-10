@@ -5,7 +5,7 @@ import Nasa from '../../assets/images/home/Nasa.webp'
 import YellowButton from '../shared/button';
 const Home = () => {
     return ( 
-     <div className='overflow-hidden' >
+     <>
         <section className="flex flex-col gap-5 w-full items-center justify-end lg:gap-0 lg:flex-row px-5 pt-28 xl:px-16 xl:pt-36 2xl:px-40 ">
           <img src={Soldat} className=" w-96 sm:max-w-[400px] md:max-w-[500px] lg:flex-1 lg:max-w-[700px] xl:max-w-[800px] 2xl:max-w-[900px] "  />
           <div className='text-white flex flex-col gap-6 w-[65vw] sm:w-[40vw] md:w-[35vw] lg:pr-16' >
@@ -32,7 +32,7 @@ const Home = () => {
         </div>
         </section>
       <Newsletter></Newsletter>
-     </div>
+     </>
      );
 }
  

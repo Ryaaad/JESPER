@@ -1,8 +1,8 @@
-import NasaAbout from "../../assets/NasaAbout.webp";
+import NasaAbout from "../../assets/images/About/NasaWomen.webp";
 import Newsletter from "../shared/Newsletter";
-import Men1 from "../../assets/Men1.webp"
-import Men2 from "../../assets/Men2.webp"
-import FatWomen from "../../assets/FatWomen.webp"
+import Men1 from "../../assets/images/About/Men.webp"
+import Men2 from "../../assets/images/About/Korean.webp"
+import FatWomen from "../../assets/images/About/FatWomen.webp"
 const About = () => {
     return (  
         <> 

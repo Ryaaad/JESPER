@@ -1,7 +1,7 @@
 import Newsletter from '../shared/Newsletter';
-import Soldat from '../../assets/Soldat.webp'
-import Game from '../../assets/Game.webp'
-import Nasa from '../../assets/Nasa.webp'
+import Soldat from '../../assets/images/home/Soldat.webp'
+import Game from '../../assets/images/home/Game.webp'
+import Nasa from '../../assets/images/home/Nasa.webp'
 import YellowButton from '../shared/button';
 const Home = () => {
     return ( 

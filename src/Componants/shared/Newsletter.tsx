@@ -1,4 +1,4 @@
-import Soldat1 from '../../assets/Soldat1.webp'
+import Soldat1 from '../../assets/images/shared/SoldatShadow.webp'
 import YellowButton from './button';
 
 const Newsletter= () => {

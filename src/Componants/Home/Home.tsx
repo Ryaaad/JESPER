@@ -30,7 +30,7 @@ const Home = () => {
            <YellowButton content='GET TO KNOW US' ></YellowButton>
           </div>
         </div>
-      {/* <Newsletter></Newsletter> */}
+      <Newsletter></Newsletter>
      </div>
      );
 }

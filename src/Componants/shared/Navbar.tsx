@@ -2,6 +2,7 @@ import { useState } from "react";
 import { motion , AnimatePresence } from "framer-motion";
 import Home0 from "../Home/Home";
 import About0 from "../About";
+import Streams from "../Streams";
 const Navbar = () => { 
   const ChosenRoute=(Route:number)=>{
     switch (Route){
@@ -103,7 +104,8 @@ case 4 :
      {Stream && 
     <motion.div animate={{opacity:1 , x:0, transition:{delay:.2,duration:1}}} initial={{opacity:0.5 , x:-1000}} 
     exit={{  x:100,opacity:0  ,transition:{delay:.3,duration:.2}}}>
-     <About0></About0></motion.div> }
+     <Streams></Streams>
+     </motion.div> }
 
      {Contact && 
     <motion.div animate={{opacity:1 , x:0, transition:{delay:2,duration:1}}} initial={{opacity:0.5 , x:-1000}} 
